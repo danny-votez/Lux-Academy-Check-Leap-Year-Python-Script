@@ -9,7 +9,6 @@
 
 ```py
 
-
 def check_leap():
     # We need only integers as input, hence use try...except combination
     try:
@@ -19,9 +18,9 @@ def check_leap():
         elif year % 4 == 0:
             print(f"Yes, {year} is a leap year")
         else:
-            print("This is not a leap year")
+            print(f"{year} is not a leap year")
     except ValueError:
-        print("Invalid Input, Please Enter a Number")
+        print("Invalid Input, Enter a Proper year")
 
         # If the user enters an invalid input, the function is called again
         return check_leap()
